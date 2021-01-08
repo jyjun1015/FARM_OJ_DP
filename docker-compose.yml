@@ -60,12 +60,12 @@ services:
       - POSTGRES_USER=onlinejudge
       - POSTGRES_PASSWORD=onlinejudge
       - JUDGE_SERVER_TOKEN=CHANGE_THIS
-      # - FORCE_HTTPS=1
+      - FORCE_HTTPS=1
       # - STATIC_CDN_HOST=cdn.oj.com
     ports:
       - "0.0.0.0:4000:8000"
       - "0.0.0.0:443:1443"
-      # 404
+      # nginx와 연동하여 https 프로토콜 사용
 
       
 #     networks: 

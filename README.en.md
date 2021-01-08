@@ -1,4 +1,4 @@
-[简体中文](https://github.com/QingdaoU/OnlineJudgeDeploy/blob/2.0/README.md) | English
+[출처] (https://github.com/QingdaoU/OnlineJudgeDeploy/blob/2.0/README.md) 
 
 ## Environmental preparation (Linux)
 
@@ -18,6 +18,16 @@
     Install using script: `sudo curl -sSL get.docker.com | sh`
 
     Other installation methods: [https://docs.docker.com/install/](https://docs.docker.com/install/)
+
+
+## Environmental preparation (Windows)
+
++ System: Window 10 Home 
+
+1. Install Docker Desktop
+
+    [https://www.docker.com/get-started]
+
 
 ## Install
 
