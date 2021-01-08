@@ -18,6 +18,8 @@ services:
       - POSTGRES_DB=onlinejudge
       - POSTGRES_USER=onlinejudge
       - POSTGRES_PASSWORD=onlinejudge
+    ports:
+      - "0.0.0.0:3306:5432"
 
   judge-server:
     image: registry.cn-hangzhou.aliyuncs.com/onlinejudge/judge_server
@@ -61,5 +63,21 @@ services:
       # - FORCE_HTTPS=1
       # - STATIC_CDN_HOST=cdn.oj.com
     ports:
-      - "0.0.0.0:80:8000"
+      - "0.0.0.0:4000:8000"
       - "0.0.0.0:443:1443"
+      # 404
+
+      
+#     networks: 
+#       - backend
+
+#   nginx:
+#     image: "nginx:test"
+#     container_name: webserver
+#     ports :
+#       - "80:80"
+#     networks: 
+#       - backend 
+# networks:
+#   backend:
+#     driver: bridge
